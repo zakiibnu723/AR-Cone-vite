@@ -1,0 +1,73 @@
+/* main.css */
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    overflow: hidden;
+    height: 100vh;
+  }
+  
+  /* Info section styling */
+  #info {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 16px;
+    z-index: 10;
+  }
+  
+  #info a {
+    color: #00bcd4;
+    text-decoration: none;
+  }
+  
+  #info a:hover {
+    text-decoration: underline;
+  }
+  
+  /* The 3D scene container styling */
+  canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* AR button positioning */
+  button {
+    position: absolute;
+    /* top: 10px; */
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    z-index: 100;
+  }
+  
+  button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Additional custom styling for the AR hit test reticle */
+  #reticle {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    pointer-events: none;
+    z-index: 10;
+  }
+  
